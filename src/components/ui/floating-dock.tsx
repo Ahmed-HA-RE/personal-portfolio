@@ -120,7 +120,6 @@ const FloatingDockDesktop = ({
       {items.map((item) => (
         <IconContainer mouseX={mouseX} key={item.title} {...item} />
       ))}
-      {/* Add theme toggler */}
     </motion.div>
   );
 };
