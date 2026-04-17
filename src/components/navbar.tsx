@@ -56,7 +56,7 @@ const items: {
 
 const Navbar = () => {
   return (
-    <nav className='fixed bottom-10 left-1/2 -translate-x-1/2 z-30'>
+    <nav className='fixed bottom-6 max-md:right-6 md:left-1/2 md:-translate-x-1/2 z-30'>
       <FloatingDock items={items} />
     </nav>
   );

@@ -137,6 +137,12 @@
   padding: 0 16px;
 }
 
+@layer components {
+  .linear-gradient {
+    background: linear-gradient(to right, #ff512f, #f09819);
+  }
+}
+
 /* Theme Toggler Transition */
 ::view-transition-old(root),
 ::view-transition-new(root) {
