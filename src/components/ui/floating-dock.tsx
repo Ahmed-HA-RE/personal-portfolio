@@ -75,12 +75,7 @@ const FloatingDockMobile = ({
                   size={'icon-lg'}
                   className='bg-neutral-200 dark:bg-muted text-foreground'
                 >
-                  <a
-                    href={item.href}
-                    key={item.title}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                  >
+                  <a href={item.href} key={item.title}>
                     {item.icon}
                   </a>
                 </Button>

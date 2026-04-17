@@ -7,7 +7,7 @@ import { Button } from './ui/button';
 
 const HeroSection = () => {
   return (
-    <section>
+    <section id='home'>
       <div className='container min-h-[85vh] flex flex-col items-center justify-center'>
         <motion.div
           className='flex flex-col items-center justify-center text-center gap-6'

@@ -7,7 +7,7 @@ import ThemeToggler from './components/theme-toggler';
 const App = () => {
   return (
     <Providers>
-      <header className='py-6 relative z-20'>
+      <header className='py-6 z-20'>
         <div className='container flex items-center justify-between'>
           <img src='/logo.svg' className='w-16' />
           <ThemeToggler />
@@ -24,6 +24,8 @@ const App = () => {
       <main className='z-20 relative'>
         {/* Hero Section */}
         <HeroSection />
+
+        {/* About Me */}
       </main>
     </Providers>
   );

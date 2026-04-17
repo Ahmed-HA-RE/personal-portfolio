@@ -96,7 +96,7 @@ const ThemeToggler = ({
         {...props}
         className={cn(className, 'cursor-pointer')}
       />
-      <Label htmlFor='icon-label' className='cursor-pointer'>
+      <Label htmlFor='icon-label' className=''>
         <span className='sr-only'>Toggle dark mode</span>
         {isDark ? (
           <FiMoon className='size-5' aria-hidden='true' />
