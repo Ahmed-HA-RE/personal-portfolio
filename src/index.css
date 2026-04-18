@@ -132,9 +132,17 @@
 /* Custom Classes */
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 0 16px;
+
+  @media (min-width: 768px) {
+    padding: 0 24px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0 32px;
+  }
 }
 
 @layer components {

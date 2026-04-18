@@ -52,7 +52,7 @@ function StarLayer({
       {...props}
     >
       <div
-        className='absolute text-black/70 dark:text-[#BABABA] rounded-full'
+        className='absolute text-black dark:text-[#BABABA] rounded-full'
         style={{
           width: `${size}px`,
           height: `${size}px`,
@@ -60,7 +60,7 @@ function StarLayer({
         }}
       />
       <div
-        className='absolute  rounded-full top-[2000px] text-black/70 dark:text-[#BABABA]'
+        className='absolute  rounded-full top-[2000px] text-black dark:text-[#BABABA]'
         style={{
           width: `${size}px`,
           height: `${size}px`,

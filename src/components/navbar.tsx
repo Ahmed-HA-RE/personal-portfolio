@@ -20,7 +20,7 @@ const items: {
   {
     title: 'About',
     icon: <FiUser size={25} />,
-    href: '#about',
+    href: '#about-me',
   },
   {
     title: 'Projects',

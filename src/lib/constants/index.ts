@@ -8,4 +8,59 @@ export const WORDS = [
   'Full Stack Developer',
   'Frontend Developer',
   'Backend Developer',
+  'Mern Stack Developer',
+  'React & Next.js Specialist',
+];
+
+export const TECH_STACK = [
+  {
+    tech: 'react-js',
+    img: '/tech/reactjs.svg',
+    className: 'size-8',
+  },
+  {
+    tech: 'next-js',
+    img: '/tech/nextjs.svg',
+    className: 'size-8',
+  },
+  {
+    tech: 'cursor',
+    img: '/tech/cursor.svg',
+    className: 'size-8 dark:hidden',
+  },
+  {
+    tech: 'cursor-dark',
+    img: '/tech/cursor-dark.svg',
+    className: 'size-8 hidden dark:block',
+  },
+  {
+    tech: 'neon',
+    img: '/tech/neon.svg',
+    className: 'size-7',
+  },
+  {
+    tech: 'node-js',
+    img: '/tech/nodejs.svg',
+    className: 'size-8',
+  },
+  {
+    tech: 'typescript',
+    img: '/tech/typescript.svg',
+    className: 'size-8',
+  },
+  {
+    tech: 'postgresql',
+    img: '/tech/postgresql.svg',
+    className: 'size-8',
+  },
+  {
+    tech: 'prisma',
+    img: '/tech/prisma.svg',
+    className: 'size-8',
+  },
+  {
+    tech: 'git',
+    img: '/tech/git.svg',
+    className: 'size-8',
+  },
 ];

@@ -8,14 +8,16 @@ import { Button } from './ui/button';
 const HeroSection = () => {
   return (
     <section id='home'>
-      <div className='container min-h-[85vh] flex flex-col items-center justify-center'>
+      <div className='container min-h-[90vh] flex flex-col items-center justify-center'>
         <motion.div
           className='flex flex-col items-center justify-center text-center gap-6'
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{
-            duration: 0.4,
-            ease: 'easeOut',
+            type: 'spring',
+            duration: 1,
+            bounce: 0.25,
           }}
         >
           <div className='flex items-center justify-center rounded-full linear-gradient p-0.5'>
@@ -27,7 +29,7 @@ const HeroSection = () => {
             Hi, I'm
             <span className='bg-clip-text text-transparent linear-gradient'>
               {' '}
-              Ahmed Haitham 👋
+              Ahmed 👋
             </span>
           </h1>
           <TypingTextAnimation
