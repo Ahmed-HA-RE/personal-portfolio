@@ -21,7 +21,7 @@ const SectionWrapper = ({
   children: React.ReactNode;
 }) => {
   return (
-    <section className='pb-8 md:pb-16 lg:pb-24' id={id}>
+    <section className='py-8 md:py-14 lg:py-20' id={id}>
       <div className='container space-y-6'>
         <motion.div
           variants={variants}

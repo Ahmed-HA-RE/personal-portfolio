@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className='container min-h-[90vh] flex flex-col items-center justify-center'>
         <motion.div
           className='flex flex-col items-center justify-center text-center gap-6'
-          initial={{ opacity: 0, y: -40 }}
+          initial={{ opacity: 0, y: -60 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{
@@ -26,11 +26,11 @@ const HeroSection = () => {
             </Badge>
           </div>
           <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold leading-tight'>
-            Hi, I'm
+            Hi, I'm{' '}
             <span className='bg-clip-text text-transparent linear-gradient'>
-              {' '}
-              Ahmed 👋
-            </span>
+              Ahmed Haitham
+            </span>{' '}
+            👋
           </h1>
           <TypingTextAnimation
             words={WORDS}

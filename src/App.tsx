@@ -1,5 +1,6 @@
 import AboutMeSection from './components/about-me-section';
 import HeroSection from './components/hero-section';
+import ProjectsSection from './components/projects-section';
 import Navbar from './components/navbar';
 import Providers from './components/providers';
 import { StarsBackground } from './components/stars-background';
@@ -23,6 +24,9 @@ const App = () => {
 
         {/* About Me */}
         <AboutMeSection />
+
+        {/* Projects */}
+        <ProjectsSection />
       </main>
     </Providers>
   );

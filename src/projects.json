@@ -1,0 +1,59 @@
+[
+  {
+    "id": "1",
+    "title": "Bayti",
+    "description": "Full-stack real estate platform with an ERP-style admin system for managing properties, users, bookings, and content.",
+    "image": "/projects/bayti.png",
+    "stack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Prisma",
+      "PostgreSQL",
+      "Framer Motion"
+    ],
+    "links": {
+      "github": "https://github.com/Ahmed-HA-RE/bayti",
+      "live": "https://bayti.ahmedrehandev.net"
+    }
+  },
+  {
+    "id": "2",
+    "title": "Academiq",
+    "description": "LMS SaaS platform for creating, managing, and monetizing online courses with structured learning experiences.",
+    "image": "/projects/academiq.png",
+    "stack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Prisma",
+      "PostgreSQL",
+      "Redis"
+    ],
+    "links": {
+      "github": "https://github.com/Ahmed-HA-RE/academiq",
+      "live": "https://academiq.ahmedrehandev.net"
+    }
+  },
+  {
+    "id": "3",
+    "title": "Bayro",
+    "description": "E-commerce platform for managing products, orders, payments, and customer workflows with a secure admin system.",
+    "image": "/projects/bayro.png",
+    "stack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Prisma",
+      "PostgreSQL",
+      "Stripe"
+    ],
+    "links": {
+      "github": "https://github.com/Ahmed-HA-RE/bayro",
+      "live": "https://bayro.ahmedrehandev.net"
+    }
+  }
+]

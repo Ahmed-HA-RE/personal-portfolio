@@ -5,11 +5,11 @@ export const SOCIAL_LINKS = {
 };
 
 export const WORDS = [
-  'Full Stack Developer',
-  'Frontend Developer',
-  'Backend Developer',
-  'Mern Stack Developer',
-  'React & Next.js Specialist',
+  'Full Stack Web Developer',
+  'Next.js & React Engineer',
+  'Full Stack Engineer',
+  'End to End System Builder',
+  'Web Application Builder',
 ];
 
 export const TECH_STACK = [

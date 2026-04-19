@@ -40,7 +40,7 @@ const items: {
   {
     title: 'Resume',
     icon: <LuFileText size={25} />,
-    href: '/resume.pdf',
+    href: '/Ahmed-Haitham-Resume.pdf',
   },
   {
     title: 'GitHub',

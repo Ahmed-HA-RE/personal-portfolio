@@ -34,7 +34,7 @@ const AboutMeSection = () => {
           variants={variants}
           initial='hidden'
           whileInView='visible'
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.2 }}
           className='space-y-8'
         >
           <div className='space-y-4'>
