@@ -3,19 +3,13 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { FiSun, FiMoon } from 'react-icons/fi';
 import { flushSync } from 'react-dom';
-import { Switch } from './ui/switch';
-import { Label } from './ui/label';
-import { cn } from '@/lib/utils';
+import { Button } from './ui/button';
 
 interface AnimatedThemeTogglerProps extends React.ComponentPropsWithoutRef<'button'> {
   duration?: number;
 }
 
-const ThemeToggler = ({
-  className,
-  duration = 400,
-  ...props
-}: AnimatedThemeTogglerProps) => {
+const ThemeToggler = ({ duration = 400 }: AnimatedThemeTogglerProps) => {
   const [isDark, setIsDark] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
 
@@ -86,25 +80,15 @@ const ThemeToggler = ({
   }, [isDark, duration]);
 
   return (
-    <div className='inline-flex items-center gap-2 cursor-pointer'>
-      <Switch
-        id='icon-label'
-        checked={isDark}
-        onCheckedChange={toggleTheme}
-        aria-label='Toggle dark mode'
-        ref={buttonRef}
-        {...props}
-        className={cn(className, 'cursor-pointer')}
-      />
-      <Label htmlFor='icon-label' className=''>
-        <span className='sr-only'>Toggle dark mode</span>
-        {isDark ? (
-          <FiMoon className='size-5' aria-hidden='true' />
-        ) : (
-          <FiSun className='size-5' aria-hidden='true' />
-        )}
-      </Label>
-    </div>
+    <Button
+      variant='ghost'
+      size={'icon-lg'}
+      ref={buttonRef}
+      onClick={toggleTheme}
+      className='rounded-xl'
+    >
+      {isDark ? <FiMoon /> : <FiSun />}
+    </Button>
   );
 };
 
