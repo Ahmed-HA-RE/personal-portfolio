@@ -1,8 +1,10 @@
-import { TECH_STACK } from '@/lib/constants';
 import SectionWrapper from './shared/section-wrapper';
 import { Button } from './ui/button';
 import { FiArrowDown } from 'react-icons/fi';
 import { motion, stagger } from 'motion/react';
+import { cn } from '@/lib/utils';
+import { SKILLS } from '@/skills';
+import { TECH_STACK } from '@/lib/constants';
 
 const variants = {
   hidden: { opacity: 0, x: -100 },
@@ -14,6 +16,10 @@ const variants = {
 };
 
 const AboutMeSection = () => {
+  const techStack = SKILLS.filter((skill) => {
+    return TECH_STACK.some((stack) => stack === skill.name);
+  });
+
   return (
     <SectionWrapper id='about-me' title='About Me'>
       <div className='flex flex-col gap-6'>
@@ -74,14 +80,12 @@ const AboutMeSection = () => {
           >
             <p className='font-semibold'>My Tech Stack ~</p>
             <div className='flex flex-wrap gap-5'>
-              {TECH_STACK.map((tech) => (
-                <img
-                  key={tech.tech}
-                  src={tech.img}
-                  alt={tech.tech}
-                  className={tech.className}
-                />
-              ))}
+              {techStack.map((tech) => {
+                const Icon = tech.icon;
+                return (
+                  <Icon key={tech.id} className={cn('size-8', tech.color)} />
+                );
+              })}
             </div>
           </motion.div>
 

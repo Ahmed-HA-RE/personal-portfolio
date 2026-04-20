@@ -5,6 +5,7 @@ import Navbar from './components/navbar';
 import Providers from './components/providers';
 import { StarsBackground } from './components/stars-background';
 import ThemeToggler from './components/theme-toggler';
+import SkillsSection from './components/skills-section';
 
 const App = () => {
   return (
@@ -27,6 +28,9 @@ const App = () => {
 
         {/* Projects */}
         <ProjectsSection />
+
+        {/* Skills */}
+        <SkillsSection />
       </main>
     </Providers>
   );
