@@ -2,7 +2,6 @@ import AboutMeSection from './components/about-me-section';
 import HeroSection from './components/hero-section';
 import ProjectsSection from './components/projects-section';
 import Navbar from './components/navbar';
-import Providers from './components/providers';
 import { StarsBackground } from './components/stars-background';
 import ThemeToggler from './components/theme-toggler';
 import SkillsSection from './components/skills-section';
@@ -10,7 +9,7 @@ import ContactSection from './components/contact-section';
 
 const App = () => {
   return (
-    <Providers>
+    <>
       <header className='py-6 z-20 relative'>
         <div className='container flex items-center justify-between'>
           <img src='/logo.svg' alt='Logo' className='w-16' />
@@ -20,23 +19,25 @@ const App = () => {
       {/* Navbar */}
       <Navbar />
       <StarsBackground className='fixed inset-0 z-0' pointerEvents={false} />
-      <main className='z-20 relative'>
-        {/* Hero Section */}
-        <HeroSection />
+      <div className='relative z-10'>
+        <main>
+          {/* Hero Section */}
+          <HeroSection />
 
-        {/* About Me */}
-        <AboutMeSection />
+          {/* About Me */}
+          <AboutMeSection />
 
-        {/* Projects */}
-        <ProjectsSection />
+          {/* Projects */}
+          <ProjectsSection />
 
-        {/* Skills */}
-        <SkillsSection />
+          {/* Skills */}
+          <SkillsSection />
 
-        {/* Contact Section */}
-        <ContactSection />
-      </main>
-    </Providers>
+          {/* Contact Section */}
+          <ContactSection />
+        </main>
+      </div>
+    </>
   );
 };
 
