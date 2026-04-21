@@ -1,6 +1,4 @@
 import SectionWrapper from './shared/section-wrapper';
-import { Button } from './ui/button';
-import { FiArrowDown } from 'react-icons/fi';
 import { motion, stagger } from 'motion/react';
 import { cn } from '@/lib/utils';
 import { SKILLS } from '@/skills';
@@ -56,11 +54,9 @@ const AboutMeSection = () => {
               className='text-muted-foreground text-sm md:text-base lg:text-lg leading-relaxed'
             >
               Based in the UAE with over 2 years of experience building web
-              applications. I hold a Bachelor's degree in Computer Science,
-              graduating with a CGPA of 3.96/4. I specialize in React and
-              Next.js, focusing on building fast, scalable, and maintainable
-              user interfaces combined with reliable backend systems and solid
-              system design.
+              applications. I specialize in React and Next.js, focusing on
+              building fast, scalable, and maintainable user interfaces combined
+              with reliable backend systems and solid system design.
             </motion.p>
             <motion.p
               variants={variants}
@@ -88,17 +84,19 @@ const AboutMeSection = () => {
               })}
             </div>
           </motion.div>
-
-          <motion.div variants={variants} className='flex flex-col gap-3'>
-            <p className='text-sm text-muted-foreground'>
-              Open to full-time opportunities
-            </p>
-            <Button asChild size='lg' className='w-fit duration-500'>
-              <a href='#contact'>
-                Reach me
-                <FiArrowDown className='animate-bounce size-4.5' />
-              </a>
-            </Button>
+          <motion.div
+            variants={variants}
+            className='flex  md:items-center gap-6'
+          >
+            <p className='font-semibold'>Education ~</p>
+            <div className='flex gap-2'>B.S. in Computer Science.</div>
+          </motion.div>
+          <motion.div
+            variants={variants}
+            className='flex  md:items-center gap-6'
+          >
+            <p className='font-semibold'>Languages ~</p>
+            <div className='flex gap-2'>English (Fluent), Arabic (Native)</div>
           </motion.div>
         </motion.div>
       </div>

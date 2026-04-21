@@ -25,22 +25,13 @@ const SkillsSection = () => {
       title='Skills'
       subtitle='These are the Tools and Technologies I work with'
     >
-      <motion.div
-        initial='hidden'
-        whileInView='visible'
-        variants={variants}
-        viewport={{ once: true, amount: 0.5 }}
-      >
+      <motion.div initial='hidden' whileInView='visible' variants={variants}>
         <Card className='rounded-lg'>
           <CardContent className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 gap-4'>
             {SKILLS.map((skill) => {
               const Icon = skill.icon;
               return (
-                <motion.div
-                  key={skill.id}
-                  variants={childVariants}
-                  viewport={{ once: true, amount: 0.5 }}
-                >
+                <motion.div key={skill.id} variants={childVariants}>
                   <Card
                     className={`rounded-lg py-2.5 hover:scale-110 transition-transform duration-500 ring-0 bg-muted ${skill.boxShadow}`}
                   >
