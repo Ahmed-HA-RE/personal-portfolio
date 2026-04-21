@@ -3,6 +3,8 @@ import { motion, stagger } from 'motion/react';
 import { cn } from '@/lib/utils';
 import { SKILLS } from '@/skills';
 import { TECH_STACK } from '@/lib/constants';
+import { GitHubCalendar } from 'react-github-calendar';
+import { useTheme } from './ui/theme-provider';
 
 const variants = {
   hidden: { opacity: 0, x: -100 },
@@ -14,6 +16,8 @@ const variants = {
 };
 
 const AboutMeSection = () => {
+  const { theme } = useTheme();
+
   const techStack = SKILLS.filter((skill) => {
     return TECH_STACK.some((stack) => stack === skill.name);
   });
@@ -86,17 +90,25 @@ const AboutMeSection = () => {
           </motion.div>
           <motion.div
             variants={variants}
-            className='flex  md:items-center gap-6'
+            className='flex md:items-center gap-6'
           >
             <p className='font-semibold'>Education ~</p>
             <div className='flex gap-2'>B.S. in Computer Science.</div>
           </motion.div>
           <motion.div
             variants={variants}
-            className='flex  md:items-center gap-6'
+            className='flex md:items-center gap-6'
           >
             <p className='font-semibold'>Languages ~</p>
             <div className='flex gap-2'>English (Fluent), Arabic (Native)</div>
+          </motion.div>
+          <motion.div variants={variants} className='flex flex-col gap-6'>
+            <p className='font-semibold'>GitHub Contributions ~</p>
+            <GitHubCalendar
+              className='mx-auto'
+              username='ahmed-ha-re'
+              colorScheme={theme === 'dark' ? 'dark' : 'light'}
+            />
           </motion.div>
         </motion.div>
       </div>

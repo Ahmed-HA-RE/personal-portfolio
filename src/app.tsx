@@ -6,6 +6,7 @@ import { StarsBackground } from './components/stars-background';
 import ThemeToggler from './components/theme-toggler';
 import SkillsSection from './components/skills-section';
 import ContactSection from './components/contact-section';
+import Footer from './components/footer';
 
 const App = () => {
   return (
@@ -36,6 +37,8 @@ const App = () => {
           {/* Contact Section */}
           <ContactSection />
         </main>
+        {/* Footer */}
+        <Footer />
       </div>
     </>
   );
