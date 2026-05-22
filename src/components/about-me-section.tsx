@@ -30,12 +30,12 @@ const AboutMeSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          className='rounded-full max-w-[250px] mx-auto bg-[#e2e8f0]'
+          className='rounded-full bg-[#e2e8f0] size-[250px] mx-auto'
         >
           <img
             src='/portfolio-photo.png'
             alt="Ahmed's Portfolio Photo"
-            className='w-full rounded-full grayscale'
+            className='rounded-full grayscale size-full object-cover'
           />
         </motion.div>
         <motion.div
