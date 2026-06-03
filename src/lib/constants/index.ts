@@ -22,7 +22,6 @@ export const TECH_STACK = [
   'Next.js',
   'Node.js',
   'Neon',
-  'Cursor',
   'PostgreSQL',
   'Prisma',
   'Git',

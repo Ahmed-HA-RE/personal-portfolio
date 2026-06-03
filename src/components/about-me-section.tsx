@@ -57,10 +57,10 @@ const AboutMeSection = () => {
               variants={variants}
               className='text-muted-foreground text-sm md:text-base lg:text-lg leading-relaxed'
             >
-              Based in the UAE with over 2 years of experience building web
-              applications. I specialize in React and Next.js, focusing on
-              building fast, scalable, and maintainable user interfaces combined
-              with reliable backend systems and solid system design.
+              Based in the UAE with over 2 years of web development experience
+              building web applications. I specialize in React and Next.js,
+              focusing on fast, scalable, and maintainable full-stack
+              applications with solid system design.
             </motion.p>
             <motion.p
               variants={variants}
