@@ -1,12 +1,6 @@
 import { TanStackLogo } from '@/components/icons/tanstack';
 import { FaCss3Alt, FaGithub, FaHtml5, FaNodeJs } from 'react-icons/fa';
-import {
-  BsJavascript,
-  BsTypescript,
-  BsOpenai,
-  BsGit,
-  BsClaude,
-} from 'react-icons/bs';
+import { BsJavascript, BsTypescript, BsGit, BsClaude } from 'react-icons/bs';
 import { CursorLogo } from '@/components/icons/cursor-ai';
 import { FigmaLogo } from '@/components/icons/figma';
 import { MotionLogo } from '@/components/icons/motion';
@@ -76,14 +70,6 @@ export const SKILLS: Skill[] = [
   },
   {
     id: '5',
-    name: 'ChatGPT',
-    icon: BsOpenai,
-    boxShadow:
-      'shadow-[0px_4px_5px_0px_#000] dark:shadow-[0px_4px_5px_0px_#ffffff]',
-    color: 'text-black dark:text-white',
-  },
-  {
-    id: '6',
     name: 'Cursor',
     icon: CursorLogo,
     boxShadow:
@@ -91,7 +77,7 @@ export const SKILLS: Skill[] = [
     color: 'text-[#26251e] dark:text-[#ffffff]',
   },
   {
-    id: '8',
+    id: '6',
     name: 'Express',
     icon: SiExpress,
     boxShadow:
@@ -99,26 +85,26 @@ export const SKILLS: Skill[] = [
     color: 'text-black dark:text-white',
   },
   {
-    id: '9',
+    id: '7',
     name: 'Figma',
     icon: FigmaLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#f24e1e]',
   },
   {
-    id: '10',
+    id: '8',
     name: 'Motion',
     icon: MotionLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#ff9f1c]',
   },
   {
-    id: '11',
+    id: '9',
     name: 'Git',
     icon: BsGit,
     boxShadow: 'shadow-[0px_4px_5px_0px_#f1502f]',
     color: 'text-[#f1502f]',
   },
   {
-    id: '12',
+    id: '10',
     name: 'GitHub Copilot',
     icon: SiGithubcopilot,
     boxShadow:
@@ -126,7 +112,7 @@ export const SKILLS: Skill[] = [
     color: 'text-black dark:text-white',
   },
   {
-    id: '13',
+    id: '11',
     name: 'GitHub',
     icon: FaGithub,
     boxShadow:
@@ -134,7 +120,7 @@ export const SKILLS: Skill[] = [
     color: 'text-black dark:text-white',
   },
   {
-    id: '14',
+    id: '12',
     name: 'Better Auth',
     icon: SiBetterauth,
     boxShadow:
@@ -142,40 +128,40 @@ export const SKILLS: Skill[] = [
     color: 'text-black dark:text-white',
   },
   {
-    id: '15',
+    id: '13',
     name: 'Claude',
     icon: BsClaude,
     boxShadow: 'shadow-[0px_4px_5px_0px_#c15f3c]',
     color: 'text-[#c15f3c]',
   },
   {
-    id: '16',
+    id: '14',
     name: 'MongoDB',
     icon: SiMongodb,
     boxShadow: 'shadow-[0px_4px_5px_0px_#023430]',
     color: 'text-[#023430]',
   },
   {
-    id: '17',
+    id: '15',
     name: 'Mongoose',
     icon: SiMongoose,
     boxShadow: 'shadow-[0px_4px_5px_0px_#880000]',
     color: 'text-[#880000]',
   },
   {
-    id: '18',
+    id: '16',
     name: 'Neon',
     icon: NeonLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#34d59a]',
   },
   {
-    id: '19',
+    id: '17',
     name: 'Netlify',
     icon: NetlifyLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#05bdba]',
   },
   {
-    id: '20',
+    id: '18',
     name: 'Next.js',
     icon: SiNextdotjs,
     boxShadow:
@@ -183,33 +169,33 @@ export const SKILLS: Skill[] = [
     color: 'text-black dark:text-white',
   },
   {
-    id: '21',
+    id: '19',
     name: 'Node.js',
     icon: FaNodeJs,
     boxShadow: 'shadow-[0px_4px_5px_0px_#68a063]',
     color: 'text-[#68a063]',
   },
   {
-    id: '22',
+    id: '20',
     name: 'Nuqs',
     icon: NuqsLogo,
     boxShadow:
       'shadow-[0px_4px_5px_0px_#171717] dark:shadow-[0px_4px_5px_0px_#ffffff]',
   },
   {
-    id: '23',
+    id: '21',
     name: 'PostgreSQL',
     icon: PostgresqlLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#336791]',
   },
   {
-    id: '24',
+    id: '22',
     name: 'Postman',
     icon: PostmanLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#f26522]',
   },
   {
-    id: '25',
+    id: '24',
     name: 'Prisma',
     icon: SiPrisma,
     boxShadow: 'shadow-[0px_4px_5px_0px_#5a67d8]',
@@ -217,20 +203,20 @@ export const SKILLS: Skill[] = [
   },
 
   {
-    id: '26',
+    id: '25',
     name: 'React',
     icon: FaReact,
     boxShadow: 'shadow-[0px_4px_5px_0px_#58c4dc]',
     color: 'text-[#58c4dc]',
   },
   {
-    id: '27',
+    id: '26',
     name: 'Redis',
     icon: RedisLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#a32422]',
   },
   {
-    id: '28',
+    id: '27',
     name: 'Shadcn UI',
     icon: SiShadcnui,
     boxShadow:
@@ -238,34 +224,34 @@ export const SKILLS: Skill[] = [
     color: 'text-black dark:text-white',
   },
   {
-    id: '29',
+    id: '28',
     name: 'Stripe',
     icon: FaStripeS,
     boxShadow: 'shadow-[0px_4px_5px_0px_#635bff]',
     color: 'text-[#635bff]',
   },
   {
-    id: '30',
+    id: '29',
     name: 'Tailwind',
     icon: SiTailwindcss,
     boxShadow: 'shadow-[0px_4px_5px_0px_#38bdf8]',
     color: 'text-sky-400',
   },
   {
-    id: '31',
+    id: '30',
     name: 'TanStack',
     icon: TanStackLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#ff8646]',
   },
   {
-    id: '32',
+    id: '31',
     name: 'Cloudinary',
     icon: SiCloudinary,
     boxShadow: 'shadow-[0px_4px_5px_0px_#3448c5]',
     color: 'text-[#3448c5]',
   },
   {
-    id: '33',
+    id: '32',
     name: 'Vercel',
     icon: SiVercel,
     boxShadow:
@@ -273,25 +259,25 @@ export const SKILLS: Skill[] = [
     color: 'text-black dark:text-white',
   },
   {
-    id: '34',
+    id: '33',
     name: 'VS Code',
     icon: VscodeLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#0098ff]',
   },
   {
-    id: '35',
+    id: '34',
     name: 'Zod',
     icon: ZodLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#3e8ed0]',
   },
   {
-    id: '36',
+    id: '35',
     name: 'Vite',
     icon: ViteLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#863BFF]',
   },
   {
-    id: '37',
+    id: '36',
     name: 'Resend',
     icon: ResendIconLogo,
     boxShadow:
@@ -299,7 +285,7 @@ export const SKILLS: Skill[] = [
     color: 'text-black dark:text-white',
   },
   {
-    id: '38',
+    id: '37',
     name: 'Upstash',
     icon: UpstashLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#34d399]',

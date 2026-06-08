@@ -30,7 +30,7 @@
       "Node.js",
       "Prisma",
       "PostgreSQL",
-      "Redis"
+      "Stripe"
     ],
     "links": {
       "github": "https://github.com/Ahmed-HA-RE/academiq",
@@ -39,6 +39,24 @@
   },
   {
     "id": "3",
+    "title": "Weavy",
+    "description": "Full-stack social media platform with user profiles, content sharing, and real-time interactions, built for scalable and engaging user experiences.",
+    "image": "/projects/weavy.png",
+    "stack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Prisma",
+      "PostgreSQL"
+    ],
+    "links": {
+      "github": "https://github.com/Ahmed-HA-RE/weavy",
+      "live": "https://weavy.ahmedrehandev.net"
+    }
+  },
+  {
+    "id": "4",
     "title": "Bayro",
     "description": "E-commerce platform for managing products, orders, payments, and customer workflows with a secure admin system.",
     "image": "/projects/bayro.png",
