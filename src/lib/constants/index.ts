@@ -25,6 +25,7 @@ export const TECH_STACK = [
   'PostgreSQL',
   'Prisma',
   'Git',
+  'Claude',
 ];
 
 export const CONTACT_DATA = [
