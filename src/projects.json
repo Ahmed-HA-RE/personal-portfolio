@@ -1,6 +1,25 @@
 [
   {
     "id": "1",
+    "title": "DevNest",
+    "description": "Full-stack SaaS knowledge hub for developers to store, organize, and search snippets, prompts, notes, commands, and files.",
+    "image": "/projects/devnest.png",
+    "stack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "PostgreSQL",
+      "Stripe",
+      "Claude"
+    ],
+    "links": {
+      "github": "https://github.com/Ahmed-HA-RE/devnest",
+      "live": "https://devnest.ahmedrehandev.net"
+    }
+  },
+  {
+    "id": "2",
     "title": "Bayti",
     "description": "Full-stack real estate platform with an ERP-style admin system for managing properties, users, bookings, and content.",
     "image": "/projects/bayti.png",
@@ -11,7 +30,7 @@
       "Node.js",
       "Prisma",
       "PostgreSQL",
-      "Framer Motion"
+      "Motion"
     ],
     "links": {
       "github": "https://github.com/Ahmed-HA-RE/bayti",
@@ -19,7 +38,7 @@
     }
   },
   {
-    "id": "2",
+    "id": "3",
     "title": "Academiq",
     "description": "LMS SaaS platform for creating, managing, and monetizing online courses with structured learning experiences.",
     "image": "/projects/academiq.png",
@@ -38,9 +57,9 @@
     }
   },
   {
-    "id": "3",
+    "id": "4",
     "title": "Weavy",
-    "description": "Full-stack social media platform with user profiles, content sharing, and real-time interactions, built for scalable and engaging user experiences.",
+    "description": "Full-stack social media platform with user profiles, content sharing, and real-time interactions.",
     "image": "/projects/weavy.png",
     "stack": [
       "Next.js",
@@ -56,7 +75,7 @@
     }
   },
   {
-    "id": "4",
+    "id": "5",
     "title": "Bayro",
     "description": "E-commerce platform for managing products, orders, payments, and customer workflows with a secure admin system.",
     "image": "/projects/bayro.png",
