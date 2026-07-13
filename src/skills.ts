@@ -30,6 +30,8 @@ import { ZodLogo } from '@/components/icons/zod';
 import { ViteLogo } from '@/components/icons/vite';
 import { ResendIconLogo } from '@/components/icons/resend-Icon';
 import type { IconType } from 'react-icons/lib';
+import AwsLightLogo from './components/icons/awsLight';
+import AwsDarkLogo from './components/icons/awsDark';
 
 export type Skill = {
   id: string;
@@ -37,6 +39,7 @@ export type Skill = {
   icon: IconType;
   boxShadow: string;
   color?: string;
+  themeMode?: string;
 };
 
 export const SKILLS: Skill[] = [
@@ -290,5 +293,21 @@ export const SKILLS: Skill[] = [
     icon: UpstashLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#34d399]',
     color: 'text-emerald-400',
+  },
+  {
+    id: '38',
+    name: 'AWS',
+    icon: AwsLightLogo,
+    boxShadow: 'shadow-[0px_4px_5px_0px_#FF9900]',
+    color: 'text-orange-400',
+    themeMode: 'block dark:hidden',
+  },
+  {
+    id: '39',
+    name: 'AWS',
+    icon: AwsDarkLogo,
+    boxShadow: 'shadow-[0px_4px_5px_0px_#FF9900]',
+    color: 'text-orange-400',
+    themeMode: 'hidden dark:block',
   },
 ];

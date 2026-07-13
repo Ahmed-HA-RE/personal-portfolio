@@ -31,7 +31,11 @@ const SkillsSection = () => {
             {SKILLS.map((skill) => {
               const Icon = skill.icon;
               return (
-                <motion.div key={skill.id} variants={childVariants}>
+                <motion.div
+                  key={skill.id}
+                  variants={childVariants}
+                  className={cn(skill.themeMode)}
+                >
                   <Card
                     className={`rounded-lg py-2.5 hover:scale-110 transition-transform duration-500 ring-0 bg-muted ${skill.boxShadow}`}
                   >
