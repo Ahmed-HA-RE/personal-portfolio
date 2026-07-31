@@ -32,6 +32,7 @@ import { ResendIconLogo } from '@/components/icons/resend-Icon';
 import type { IconType } from 'react-icons/lib';
 import AwsLightLogo from './components/icons/awsLight';
 import AwsDarkLogo from './components/icons/awsDark';
+import NestJsLogo from './components/icons/nestjs';
 
 export type Skill = {
   id: string;
@@ -309,5 +310,12 @@ export const SKILLS: Skill[] = [
     boxShadow: 'shadow-[0px_4px_5px_0px_#FF9900]',
     color: 'text-orange-400',
     themeMode: 'hidden dark:block',
+  },
+  {
+    id: '40',
+    name: 'NestJS',
+    icon: NestJsLogo,
+    boxShadow: 'shadow-[0px_4px_5px_0px_#a32422]',
+    color: 'text-red-400',
   },
 ];

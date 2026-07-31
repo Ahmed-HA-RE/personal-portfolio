@@ -57,21 +57,21 @@ const AboutMeSection = () => {
               variants={variants}
               className='text-muted-foreground text-sm md:text-base lg:text-lg leading-relaxed'
             >
-              Based in the UAE with over 2 years of web development experience
-              building web applications. I specialize in React and Next.js,
-              focusing on fast, scalable, and maintainable full-stack
-              applications with solid system design.
+              Based in the UAE with over 2 years of experience building modern
+              web applications. I specialize in Next.js on the frontend and
+              Node.js for backend systems, focusing on fast, scalable, and
+              maintainable full-stack applications with solid system design.
             </motion.p>
             <motion.p
               variants={variants}
               className='text-muted-foreground text-sm md:text-base lg:text-lg leading-relaxed'
             >
-              I design and build scalable systems with a focus on performance,
-              maintainability, and clean architecture. I have experience
-              building dashboards and admin systems for managing and visualizing
-              data in real-world applications. I write efficient, maintainable
-              code and work with modern tools and technologies to improve system
-              design, performance, and overall product quality across projects.
+              I design robust RESTful APIs and backend systems built for
+              performance and long-term maintainability. My background includes
+              building complex dashboards and administrative systems for
+              real-time data visualization and management. I am committed to
+              writing clean, efficient code that elevates product quality and
+              overall system efficiency.
             </motion.p>
           </div>
           <motion.div

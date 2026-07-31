@@ -18,13 +18,12 @@ export const WORDS = [
 
 export const TECH_STACK = [
   'TypeScript',
-  'React',
   'Next.js',
   'Node.js',
+  'NestJS',
   'Neon',
   'PostgreSQL',
   'Prisma',
-  'Git',
   'Claude',
 ];
 
