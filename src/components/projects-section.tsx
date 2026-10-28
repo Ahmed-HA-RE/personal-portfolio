@@ -9,7 +9,7 @@ import {
   CardTitle,
 } from './ui/card';
 import { Button } from './ui/button';
-import projects from '../projects.json';
+import { PROJECTS } from '../projects';
 import { Badge } from './ui/badge';
 import { FiGithub } from 'react-icons/fi';
 import { HiOutlineExternalLink } from 'react-icons/hi';
@@ -40,9 +40,9 @@ const ProjectsSection = () => {
         whileInView='visible'
         className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch'
       >
-        {projects.map((project) => (
+        {PROJECTS.map((project) => (
           <motion.div key={project.id} variants={variants} className='group'>
-            <Card className='pt-0 pb-4 gap-4'>
+            <Card className='h-full pt-0 pb-4 gap-4'>
               <div className='relative overflow-hidden'>
                 <img
                   src={project.image}
@@ -68,7 +68,7 @@ const ProjectsSection = () => {
                   ))}
                 </span>
               </CardContent>
-              <CardFooter className='gap-3 max-sm:flex-col max-sm:items-stretch px-4'>
+              <CardFooter className='mt-auto gap-3 max-sm:flex-col max-sm:items-stretch px-4'>
                 <Button
                   size='sm'
                   asChild
