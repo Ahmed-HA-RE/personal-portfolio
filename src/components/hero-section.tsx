@@ -27,7 +27,7 @@ const HeroSection = () => {
             </Badge>
           </div>
           <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold leading-tight'>
-            <TextMorph words={GREETINGS} interval={1500} />, I'm{' '}
+            <TextMorph words={GREETINGS} interval={2200} />, I'm{' '}
             <span className='bg-clip-text text-transparent linear-gradient'>
               Ahmed Haitham
             </span>{' '}
@@ -37,8 +37,8 @@ const HeroSection = () => {
             words={WORDS}
             cursorStyle='line'
             className='text-foreground text-xl md:text-2xl lg:text-3xl'
-            deleteSpeed={50}
-            typeSpeed={50}
+            deleteSpeed={80}
+            typeSpeed={80}
             pauseDelay={2000}
             startOnView
             loop
