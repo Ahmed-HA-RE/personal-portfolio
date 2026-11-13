@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 
 import { GREETINGS, WORDS } from '@/lib/constants';
 import TypingTextAnimation from './typing-text-animation';
-import { TextMorph } from './shadcn-space/animated-text/animated-text-07';
+import { TextMorph } from './text-morph';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 
@@ -27,7 +27,7 @@ const HeroSection = () => {
             </Badge>
           </div>
           <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold leading-tight'>
-            <TextMorph words={GREETINGS} />, I'm{' '}
+            <TextMorph words={GREETINGS} interval={1500} />, I'm{' '}
             <span className='bg-clip-text text-transparent linear-gradient'>
               Ahmed Haitham
             </span>{' '}
@@ -37,8 +37,8 @@ const HeroSection = () => {
             words={WORDS}
             cursorStyle='line'
             className='text-foreground text-xl md:text-2xl lg:text-3xl'
-            deleteSpeed={80}
-            typeSpeed={80}
+            deleteSpeed={50}
+            typeSpeed={50}
             pauseDelay={2000}
             startOnView
             loop
