@@ -7,6 +7,9 @@ export const SOCIAL_LINKS = {
   linkedin: 'https://www.linkedin.com/in/ahmedhaitham-dev',
 };
 
+// English, Spanish, French, Chinese, Japanese
+export const GREETINGS = ['Hi', 'Hola', 'Bonjour', '你好', 'こんにちは'];
+
 export const WORDS = [
   'Full Stack Developer',
   'Next.js & NestJS Engineer',

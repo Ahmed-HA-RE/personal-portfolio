@@ -1,7 +1,8 @@
 import { motion } from 'motion/react';
 
-import { WORDS } from '@/lib/constants';
+import { GREETINGS, WORDS } from '@/lib/constants';
 import TypingTextAnimation from './typing-text-animation';
+import { TextMorph } from './text-morph';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 
@@ -26,7 +27,7 @@ const HeroSection = () => {
             </Badge>
           </div>
           <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold leading-tight'>
-            Hi, I'm{' '}
+            <TextMorph words={GREETINGS} interval={2200} />, I'm{' '}
             <span className='bg-clip-text text-transparent linear-gradient'>
               Ahmed Haitham
             </span>{' '}

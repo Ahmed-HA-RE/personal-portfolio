@@ -46,7 +46,7 @@ const ContactSection = () => {
                   <span
                     className={cn(
                       buttonVariants(),
-                      'bg-muted text-foreground rounded-xl text-base group-hover:bg-white group-hover:text-black',
+                      'bg-muted text-foreground rounded-xl text-base group-hover:bg-white group-hover:text-black hover:bg-white hover:text-black',
                     )}
                   >
                     {contact.buttonText}
