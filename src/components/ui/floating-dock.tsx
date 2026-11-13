@@ -20,6 +20,12 @@ import { useRef, useState } from 'react';
 import { Button } from './button';
 import { LuPanelTopClose } from 'react-icons/lu';
 
+// Section anchors stay in the page, everything else opens in a new tab
+const getLinkProps = (href: string) =>
+  href.startsWith('#')
+    ? { href }
+    : { href, target: '_blank', rel: 'noopener noreferrer' };
+
 export const FloatingDock = ({
   items,
   desktopClassName,
@@ -75,7 +81,7 @@ const FloatingDockMobile = ({
                   size={'icon-lg'}
                   className='bg-neutral-200 dark:bg-muted text-foreground'
                 >
-                  <a href={item.href} key={item.title}>
+                  <a {...getLinkProps(item.href)} key={item.title}>
                     {item.icon}
                   </a>
                 </Button>
@@ -177,7 +183,7 @@ function IconContainer({
   const [hovered, setHovered] = useState(false);
 
   return (
-    <a href={href}>
+    <a {...getLinkProps(href)}>
       <motion.div
         ref={ref}
         style={{ width, height }}

@@ -53,6 +53,11 @@ const ProjectsSection = () => {
               <CardHeader className='px-4'>
                 <CardTitle className='text-xl'>{project.title}</CardTitle>
                 <CardDescription>{project.description}</CardDescription>
+                {project.note && (
+                  <p className='text-xs italic text-muted-foreground'>
+                    {project.note}
+                  </p>
+                )}
               </CardHeader>
               <CardContent className='px-0'>
                 <span className='px-4 flex flex-wrap gap-2.5'>

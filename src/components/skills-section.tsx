@@ -1,7 +1,7 @@
 import SectionWrapper from './shared/section-wrapper';
 import { Card, CardContent } from './ui/card';
 import { motion } from 'motion/react';
-import { SKILLS } from '../skills';
+import { SKILLS, SKILL_CATEGORIES } from '../skills';
 import { cn } from '@/lib/utils';
 
 const variants = {
@@ -27,28 +27,42 @@ const SkillsSection = () => {
     >
       <motion.div initial='hidden' whileInView='visible' variants={variants}>
         <Card className='rounded-lg'>
-          <CardContent className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4'>
-            {SKILLS.map((skill) => {
-              const Icon = skill.icon;
-              return (
-                <motion.div
-                  key={skill.id}
+          <CardContent className='space-y-8'>
+            {SKILL_CATEGORIES.map((category) => (
+              <div key={category} className='space-y-4'>
+                <motion.h3
                   variants={childVariants}
-                  className={cn(skill.themeMode)}
+                  className='text-lg font-semibold text-foreground'
                 >
-                  <Card
-                    className={`rounded-lg py-2.5 hover:scale-110 transition-transform duration-500 ring-0 bg-muted ${skill.boxShadow}`}
-                  >
-                    <CardContent className='flex flex-col items-center justify-center gap-2 px-1'>
-                      <Icon className={cn('size-9', skill.color)} />
-                      <span className='text-foreground text-base'>
-                        {skill.name}
-                      </span>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-              );
-            })}
+                  {category}
+                </motion.h3>
+                <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4'>
+                  {SKILLS.filter((skill) => skill.category === category).map(
+                    (skill) => {
+                      const Icon = skill.icon;
+                      return (
+                        <motion.div
+                          key={skill.id}
+                          variants={childVariants}
+                          className={cn(skill.themeMode)}
+                        >
+                          <Card
+                            className={`rounded-lg py-2.5 hover:scale-110 transition-transform duration-500 ring-0 bg-muted ${skill.boxShadow}`}
+                          >
+                            <CardContent className='flex flex-col items-center justify-center gap-2 px-1'>
+                              <Icon className={cn('size-9', skill.color)} />
+                              <span className='text-foreground text-base'>
+                                {skill.name}
+                              </span>
+                            </CardContent>
+                          </Card>
+                        </motion.div>
+                      );
+                    },
+                  )}
+                </div>
+              </div>
+            ))}
           </CardContent>
         </Card>
       </motion.div>

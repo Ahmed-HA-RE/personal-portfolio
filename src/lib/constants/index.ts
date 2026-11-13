@@ -1,6 +1,5 @@
 import GmailLogo from '@/components/icons/gmail-logo';
-import { FaPhoneAlt } from 'react-icons/fa';
-import { HiMapPin } from 'react-icons/hi2';
+import { FaLinkedin, FaPhoneAlt } from 'react-icons/fa';
 
 export const APP_URL = 'https://www.ahmedrehandev.com';
 export const SOCIAL_LINKS = {
@@ -9,11 +8,9 @@ export const SOCIAL_LINKS = {
 };
 
 export const WORDS = [
-  'Full Stack Web Developer',
-  'Next.js & React Engineer',
-  'Full Stack Engineer',
-  'End to End System Builder',
-  'Web Application Builder',
+  'Full Stack Developer',
+  'Next.js & NestJS Engineer',
+  'SaaS Product Builder',
 ];
 
 export const TECH_STACK = [
@@ -43,10 +40,10 @@ export const CONTACT_DATA = [
     icon: FaPhoneAlt,
   },
   {
-    title: 'Location',
-    subtitle: 'Based in Abu Dhabi, United Arab Emirates',
-    buttonText: 'View on Map',
-    value: 'https://maps.app.goo.gl/72MVeKgPkavnXvvYA',
-    icon: HiMapPin,
+    title: 'LinkedIn',
+    subtitle: "Let's connect and talk shop",
+    buttonText: 'View Profile',
+    value: SOCIAL_LINKS.linkedin,
+    icon: FaLinkedin,
   },
 ];

@@ -22,6 +22,10 @@ const ContactSection = () => {
               viewport={{ once: true, amount: 0.5 }}
               key={contact.title}
               href={contact.value}
+              {...(contact.value.startsWith('http') && {
+                target: '_blank',
+                rel: 'noopener noreferrer',
+              })}
             >
               <Card className='rounded-lg hover:scale-105 transition duration-300 group cursor-pointer hover:bg-accent'>
                 <CardContent className='flex flex-col gap-5'>

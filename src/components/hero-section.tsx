@@ -43,10 +43,10 @@ const HeroSection = () => {
             loop
           />
           <p className='text-muted-foreground text-sm md:text-base lg:text-lg max-w-xl mx-auto leading-relaxed'>
-            I specialize in building scalable, high-performance web applications
-            with smooth frontend experiences and solid backend systems. I focus
-            on clean architecture, intuitive interfaces, and real-world
-            usability.
+            I build full-stack SaaS products with Next.js and NestJS, from the
+            database and APIs all the way to the interface people actually use.
+            Most of my work covers auth, payments, real-time features, and admin
+            dashboards.
           </p>
           {/* Actions */}
           <div className='flex items-center justify-center gap-4'>
