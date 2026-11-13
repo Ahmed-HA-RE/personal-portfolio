@@ -1,7 +1,7 @@
 import GmailLogo from '@/components/icons/gmail-logo';
 import { FaLinkedin, FaPhoneAlt } from 'react-icons/fa';
 
-export const APP_URL = 'https://www.ahmedrehandev.com';
+export const APP_URL = 'https://www.ahmedrehandev.net';
 export const SOCIAL_LINKS = {
   github: 'https://github.com/Ahmed-HA-RE',
   linkedin: 'https://www.linkedin.com/in/ahmedhaitham-dev',

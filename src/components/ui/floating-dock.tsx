@@ -81,7 +81,11 @@ const FloatingDockMobile = ({
                   size={'icon-lg'}
                   className='bg-neutral-200 dark:bg-muted text-foreground'
                 >
-                  <a {...getLinkProps(item.href)} key={item.title}>
+                  <a
+                    {...getLinkProps(item.href)}
+                    key={item.title}
+                    aria-label={item.title}
+                  >
                     {item.icon}
                   </a>
                 </Button>
@@ -92,6 +96,8 @@ const FloatingDockMobile = ({
       </AnimatePresence>
       <Button
         onClick={() => setOpen(!open)}
+        aria-label='Toggle navigation'
+        aria-expanded={open}
         size={'icon-lg'}
         className='bg-stone-200 dark:bg-muted text-foreground'
       >
@@ -183,7 +189,7 @@ function IconContainer({
   const [hovered, setHovered] = useState(false);
 
   return (
-    <a {...getLinkProps(href)}>
+    <a {...getLinkProps(href)} aria-label={title}>
       <motion.div
         ref={ref}
         style={{ width, height }}

@@ -85,6 +85,7 @@ const ThemeToggler = ({ duration = 400 }: AnimatedThemeTogglerProps) => {
       size={'icon-lg'}
       ref={buttonRef}
       onClick={toggleTheme}
+      aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
       className='rounded-xl'
     >
       {isDark ? <FiMoon /> : <FiSun />}

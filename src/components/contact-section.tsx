@@ -2,7 +2,8 @@ import SectionWrapper from './shared/section-wrapper';
 import { motion } from 'motion/react';
 import { CONTACT_DATA } from '@/lib/constants';
 import { Card, CardContent } from './ui/card';
-import { Button } from './ui/button';
+import { buttonVariants } from './ui/button';
+import { cn } from '@/lib/utils';
 
 const ContactSection = () => {
   return (
@@ -41,9 +42,15 @@ const ContactSection = () => {
                       {contact.subtitle}
                     </p>
                   </div>
-                  <Button className='bg-muted text-foreground rounded-xl text-base group-hover:bg-white group-hover:text-black hover:bg-white hover:text-black'>
+                  {/* Styled like a button, the whole card is already the link */}
+                  <span
+                    className={cn(
+                      buttonVariants(),
+                      'bg-muted text-foreground rounded-xl text-base group-hover:bg-white group-hover:text-black',
+                    )}
+                  >
                     {contact.buttonText}
-                  </Button>
+                  </span>
                 </CardContent>
               </Card>
             </motion.a>

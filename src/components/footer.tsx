@@ -12,6 +12,7 @@ const Footer = () => {
           <div className='flex items-center gap-4 max-sm:justify-center'>
             <a
               href={SOCIAL_LINKS.github}
+              aria-label='GitHub'
               target='_blank'
               rel='noopener noreferrer'
               className='hover:scale-110 transition duration-300'
@@ -20,6 +21,7 @@ const Footer = () => {
             </a>
             <a
               href={SOCIAL_LINKS.linkedin}
+              aria-label='LinkedIn'
               target='_blank'
               rel='noopener noreferrer'
               className='text-foreground hover:text-blue-500 hover:scale-110 transition duration-300'
