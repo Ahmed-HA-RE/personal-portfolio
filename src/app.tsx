@@ -13,7 +13,7 @@ const App = () => {
     <>
       <header className='py-6 z-20 relative'>
         <div className='container flex items-center justify-between'>
-          <img src='/logo.svg' alt='Logo' className='w-16' />
+          <img src='/logo.svg' alt='Ahmed Haitham logo' className='w-16' />
           <ThemeToggler />
         </div>
       </header>
