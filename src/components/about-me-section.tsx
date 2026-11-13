@@ -50,7 +50,7 @@ const AboutMeSection = () => {
               variants={variants}
               className='text-3xl md:text-4xl lg:text-4xl bg-clip-text text-transparent linear-gradient'
             >
-              Full Stack Developer
+              Software Engineer & Full Stack Developer
             </motion.h3>
 
             <motion.p

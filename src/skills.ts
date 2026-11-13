@@ -36,9 +36,20 @@ import NestJsLogo from './components/icons/nestjs';
 import JestLogo from './components/icons/jest';
 import { v4 as uuidv4 } from 'uuid';
 
+export const SKILL_CATEGORIES = [
+  'Frontend',
+  'Backend',
+  'Database',
+  'Cloud & DevOps',
+  'Tools & AI',
+] as const;
+
+export type SkillCategory = (typeof SKILL_CATEGORIES)[number];
+
 export type Skill = {
   id: string;
   name: string;
+  category: SkillCategory;
   icon: IconType;
   boxShadow: string;
   color?: string;
@@ -49,6 +60,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'HTML',
+    category: 'Frontend',
     icon: FaHtml5,
     boxShadow: 'shadow-[0px_4px_5px_0px_#e34f26]',
     color: 'text-[#e34c26]',
@@ -56,6 +68,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'CSS',
+    category: 'Frontend',
     icon: FaCss3Alt,
     boxShadow: 'shadow-[0px_4px_5px_0px_#264de4]',
     color: 'text-[#264de4]',
@@ -63,6 +76,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'JavaScript',
+    category: 'Frontend',
     icon: BsJavascript,
     boxShadow: 'shadow-[0px_4px_5px_0px_#f0db4f]',
     color: 'text-[#f0db4f]',
@@ -70,6 +84,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'TypeScript',
+    category: 'Frontend',
     icon: BsTypescript,
     boxShadow: 'shadow-[0px_4px_5px_0px_#007acc]',
     color: 'text-[#007acc]',
@@ -77,6 +92,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'Cursor',
+    category: 'Tools & AI',
     icon: CursorLogo,
     boxShadow:
       'shadow-[0px_4px_5px_0px_#26251e] dark:shadow-[0px_4px_5px_0px_#ffffff]',
@@ -85,6 +101,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'Express',
+    category: 'Backend',
     icon: SiExpress,
     boxShadow:
       'shadow-[0px_4px_5px_0px_#000] dark:shadow-[0px_4px_5px_0px_#ffffff]',
@@ -93,18 +110,21 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'Figma',
+    category: 'Tools & AI',
     icon: FigmaLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#f24e1e]',
   },
   {
     id: uuidv4(),
     name: 'Motion',
+    category: 'Frontend',
     icon: MotionLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#ff9f1c]',
   },
   {
     id: uuidv4(),
     name: 'Git',
+    category: 'Tools & AI',
     icon: BsGit,
     boxShadow: 'shadow-[0px_4px_5px_0px_#f1502f]',
     color: 'text-[#f1502f]',
@@ -112,6 +132,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'GitHub Copilot',
+    category: 'Tools & AI',
     icon: SiGithubcopilot,
     boxShadow:
       'shadow-[0px_4px_5px_0px_#211f1f] dark:shadow-[0px_4px_5px_0px_#fff]',
@@ -120,6 +141,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'GitHub',
+    category: 'Tools & AI',
     icon: FaGithub,
     boxShadow:
       'shadow-[0px_4px_5px_0px_#211f1f] dark:shadow-[0px_4px_5px_0px_#fff]',
@@ -128,6 +150,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'Better Auth',
+    category: 'Backend',
     icon: SiBetterauth,
     boxShadow:
       'shadow-[0px_4px_5px_0px_#000] dark:shadow-[0px_4px_5px_0px_#ffffff]',
@@ -136,6 +159,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'Claude',
+    category: 'Tools & AI',
     icon: BsClaude,
     boxShadow: 'shadow-[0px_4px_5px_0px_#c15f3c]',
     color: 'text-[#c15f3c]',
@@ -143,6 +167,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'MongoDB',
+    category: 'Database',
     icon: SiMongodb,
     boxShadow: 'shadow-[0px_4px_5px_0px_#023430]',
     color: 'text-[#023430]',
@@ -150,6 +175,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'Mongoose',
+    category: 'Database',
     icon: SiMongoose,
     boxShadow: 'shadow-[0px_4px_5px_0px_#880000]',
     color: 'text-[#880000]',
@@ -157,18 +183,21 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'Neon',
+    category: 'Database',
     icon: NeonLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#34d59a]',
   },
   {
     id: uuidv4(),
     name: 'Netlify',
+    category: 'Cloud & DevOps',
     icon: NetlifyLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#05bdba]',
   },
   {
     id: uuidv4(),
     name: 'Next.js',
+    category: 'Frontend',
     icon: SiNextdotjs,
     boxShadow:
       'shadow-[0px_4px_5px_0px_#171717] dark:shadow-[0px_4px_5px_0px_#ffffff]',
@@ -177,6 +206,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'Node.js',
+    category: 'Backend',
     icon: FaNodeJs,
     boxShadow: 'shadow-[0px_4px_5px_0px_#68a063]',
     color: 'text-[#68a063]',
@@ -184,6 +214,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'Nuqs',
+    category: 'Frontend',
     icon: NuqsLogo,
     boxShadow:
       'shadow-[0px_4px_5px_0px_#171717] dark:shadow-[0px_4px_5px_0px_#ffffff]',
@@ -191,18 +222,21 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'PostgreSQL',
+    category: 'Database',
     icon: PostgresqlLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#336791]',
   },
   {
     id: uuidv4(),
     name: 'Postman',
+    category: 'Tools & AI',
     icon: PostmanLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#f26522]',
   },
   {
     id: uuidv4(),
     name: 'Prisma',
+    category: 'Database',
     icon: SiPrisma,
     boxShadow: 'shadow-[0px_4px_5px_0px_#5a67d8]',
     color: 'text-[#5a67d8]',
@@ -211,6 +245,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'React',
+    category: 'Frontend',
     icon: FaReact,
     boxShadow: 'shadow-[0px_4px_5px_0px_#58c4dc]',
     color: 'text-[#58c4dc]',
@@ -218,12 +253,14 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'Redis',
+    category: 'Database',
     icon: RedisLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#a32422]',
   },
   {
     id: uuidv4(),
     name: 'Shadcn UI',
+    category: 'Frontend',
     icon: SiShadcnui,
     boxShadow:
       'shadow-[0px_4px_5px_0px_#000] dark:shadow-[0px_4px_5px_0px_#ffffff]',
@@ -232,6 +269,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'Stripe',
+    category: 'Backend',
     icon: FaStripeS,
     boxShadow: 'shadow-[0px_4px_5px_0px_#635bff]',
     color: 'text-[#635bff]',
@@ -239,6 +277,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'Tailwind',
+    category: 'Frontend',
     icon: SiTailwindcss,
     boxShadow: 'shadow-[0px_4px_5px_0px_#38bdf8]',
     color: 'text-sky-400',
@@ -246,12 +285,14 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'TanStack',
+    category: 'Frontend',
     icon: TanStackLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#ff8646]',
   },
   {
     id: uuidv4(),
     name: 'Cloudinary',
+    category: 'Cloud & DevOps',
     icon: SiCloudinary,
     boxShadow: 'shadow-[0px_4px_5px_0px_#3448c5]',
     color: 'text-[#3448c5]',
@@ -259,6 +300,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'Vercel',
+    category: 'Cloud & DevOps',
     icon: SiVercel,
     boxShadow:
       'shadow-[0px_4px_5px_0px_#000] dark:shadow-[0px_4px_5px_0px_#ffffff]',
@@ -267,24 +309,28 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'VS Code',
+    category: 'Tools & AI',
     icon: VscodeLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#0098ff]',
   },
   {
     id: uuidv4(),
     name: 'Zod',
+    category: 'Backend',
     icon: ZodLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#3e8ed0]',
   },
   {
     id: uuidv4(),
     name: 'Vite',
+    category: 'Frontend',
     icon: ViteLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#863BFF]',
   },
   {
     id: uuidv4(),
     name: 'Resend',
+    category: 'Backend',
     icon: ResendIconLogo,
     boxShadow:
       'shadow-[0px_4px_5px_0px_#000] dark:shadow-[0px_4px_5px_0px_#ffffff]',
@@ -293,6 +339,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'Upstash',
+    category: 'Database',
     icon: UpstashLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#34d399]',
     color: 'text-emerald-400',
@@ -300,6 +347,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'AWS',
+    category: 'Cloud & DevOps',
     icon: AwsLightLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#FF9900]',
     color: 'text-orange-400',
@@ -308,6 +356,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'AWS',
+    category: 'Cloud & DevOps',
     icon: AwsDarkLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#FF9900]',
     color: 'text-orange-400',
@@ -316,6 +365,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'NestJS',
+    category: 'Backend',
     icon: NestJsLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#a32422]',
     color: 'text-red-400',
@@ -323,6 +373,7 @@ export const SKILLS: Skill[] = [
   {
     id: uuidv4(),
     name: 'Jest',
+    category: 'Tools & AI',
     icon: JestLogo,
     boxShadow: 'shadow-[0px_4px_5px_0px_#99425b]',
   },

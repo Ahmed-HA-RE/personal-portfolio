@@ -7,6 +7,8 @@ export const PROJECTS = [
     description:
       'Publishing platform where writers share free or Pro-only stories, with subscriptions, real-time notifications, and a dashboard for user management and moderation.',
     image: '/projects/readium.png',
+    note:
+      'Runs on a free server, so the demo can take up to a minute to wake up.',
     stack: [
       'Next.js',
       'NestJS',
